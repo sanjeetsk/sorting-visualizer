@@ -44,8 +44,10 @@ A web-based sorting algorithm visualizer built with **HTML**, **CSS**, and **Jav
 git clone https://github.com/your-username/sorting-visualizer.git
 
 git clone https://github.com/your-username/sorting-visualizer.git
-🛠️ Step 2: Open in browser
-Open index.html in your browser.
+
+### 🛠️ Step 2: Open in browser
+  Open index.html in your browser.
+
 🌟 Usage
 Adjust the number of bars using the slider.
 Adjust the sorting speed using the speed slider.
