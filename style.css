@@ -1,11 +1,140 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: #3f3f3f;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00e6e6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #282828;
+    border-radius: 10px;
+    margin: 0 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Input and Buttons */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 6px;
+    background: #444;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #00e6e6;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #00cccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
     color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Bars Container */
+#bars-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 500px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+/* Individual Bar Styling */
+.bar {
+    width: calc(100% / 100 - 2px); /* Responsive width based on number of bars */
+    background: linear-gradient(45deg, #007bff, #00e6e6);
+    border-radius: 5px;
+    margin: 0 1px;
+    transition: height 0.2s ease, background-color 0.3s ease;
+}
+
+/* Comparison Animation */
+.bar.compare {
+    background: linear-gradient(45deg, #ff4d4d, #ff1a1a);
+    transform: scaleY(1.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Final Sorted State */
+.bar.sorted {
+    background: linear-gradient(45deg, #4caf50, #00e676);
+    transform: scaleY(1);
+}
+
+/* Animations */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #00e6e6;
+    }
+    100% {
+        box-shadow: 0 0 15px #00e6e6;
+    }
+}
+
+/* Make It Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .bar {
+        width: calc(100% / 50 - 2px);
+    }
 }
