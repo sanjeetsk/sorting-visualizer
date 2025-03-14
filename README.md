@@ -23,19 +23,17 @@ A web-based sorting algorithm visualizer built with **HTML**, **CSS**, and **Jav
 
 ---
 
-## 🏗️ **Project Structure**  
-📂 sorting-visualizer
-├── 📂 js_files
-│ ├── bubble.js
-│ ├── selection.js
-│ ├── insertion.js
-│ ├── quick.js
-│ ├── merge.js
-│ └── sorting.js
-├── index.html
-├── styles.css
-└── README.md
-
+📂 sorting-visualizer  
+├── 📂 js_files  
+│   ├── bubble.js  
+│   ├── selection.js  
+│   ├── insertion.js  
+│   ├── quick.js  
+│   ├── merge.js  
+│   └── sorting.js  
+├── index.html  
+├── styles.css  
+└── README.md  
 
 ---
 
@@ -53,15 +51,19 @@ Adjust the number of bars using the slider.
 Adjust the sorting speed using the speed slider.
 Select a sorting algorithm to visualize.
 Watch the algorithm in action!
-🧪 Implemented Algorithms
-Algorithm	Best Case	Average Case	Worst Case	Space Complexity
-Bubble Sort	O(n)	O(n²)	O(n²)	O(1)
-Selection Sort	O(n²)	O(n²)	O(n²)	O(1)
-Insertion Sort	O(n)	O(n²)	O(n²)	O(1)
-Quick Sort	O(n log n)	O(n log n)	O(n²)	O(log n)
-Merge Sort	O(n log n)	O(n log n)	O(n log n)	O(n)
-🖼️ Preview
 
+
+🧪 Implemented Algorithms
+
+Algorithm     |	 Best Case	| Average Case	| Worst Case	| Space Complexity
+Bubble Sort	  | O(n)	      |  O(n²)	      |  O(n²)	    |  O(1)
+Selection Sort|	O(n²)	      |  O(n²)	      |  O(n²)	    | O(1)
+Insertion Sort|	O(n)	      |  O(n²)	      |  O(n²)	    | O(1)
+Quick Sort	  | O(n log n)	|  O(n log n)	  |  O(n²)	    | O(log n)
+Merge Sort	  | O(n log n)	|  O(n log n)	  |  O(n log n)	| O(n)
+
+
+🖼️ Preview
 
 💡 How It Works
 Bars represent array elements.
@@ -77,22 +79,11 @@ Different colors indicate the sorting state:
 
 🙌 Contributing
 Feel free to fork this project and submit a pull request!
-
-Fork the project
-Create a new branch
-Commit your changes
-Submit a pull request
+1. Fork the project
+2. Create a new branch
+3. Commit your changes
+4. Submit a pull request
 
 ⭐ Show Some Love
 If you liked this project, give it a ⭐ on GitHub!
 
-
----
-
-### ✅ **Next Steps:**  
-- Replace `your-username` with your GitHub username.  
-- Add an actual screenshot of the visualizer.  
-
----
-
-Let me know if you'd like to add anything! 😎
